@@ -69,6 +69,8 @@ https://gustavodohara.com/blogangular/clases-en-typescript/
 # ############################################
 # 8 Routes
 # ############################################
+
+
 # ############################################
 # 9 Forms
 # ############################################
@@ -84,4 +86,18 @@ https://gustavodohara.com/blogangular/clases-en-typescript/
 
 # 10.2 Servicio HTTP: Post     
   Se implementan por medio de un servicio
-  
+
+
+
+# Get Routes
+In the component to whant use this, import the following
+
+        import{ActivatedRoute} from "@angular/router";
+
+In the constructor, you should to declarate instance object from ActivateRoter
+        
+        constructor(private activatedRoute: ActivatedRoute) {
+                        this.activatedRoute.params.subscribe(params => {
+                        console.log(params)
+                })
+        }
