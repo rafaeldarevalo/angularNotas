@@ -165,4 +165,13 @@ recursive.
     Detect new changes from before Merge
   
   
-#git Rebase  
+#git Rebase 
+
+#Cabeza separada
+
+    $ git checkout -b test-branch 56a4e5c08
+
+    ...do your thing...
+
+    $ git checkout master
+    $ git branch -d test-branch
